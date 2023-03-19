@@ -1,0 +1,156 @@
+body {
+  margin: 0%;
+  background-color: rgba(250, 246, 246, 0.25);
+  display: flex;
+  height: 300px;
+}
+
+.block1 {
+  resize: both;
+}
+
+#frm {
+  padding-top: 7%;
+  width: 500px;
+  height: 700px;
+}
+
+div > #lab-form {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+  bottom: 10%;
+  min-width: 1100px;
+  border: 1% solid rgb(239, 234, 234);
+  border-radius: 5px;
+
+  padding-left: 7%;
+
+  box-shadow: 5px 5px 10px 5px #858582;
+  overscroll-behavior-y: contain;
+  overflow-y: scroll;
+}
+
+@media all and (max-width: 300px) {
+  div > #lab-form {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    bottom: 10%;
+    max-width: 600px;
+    border: 1% solid rgb(239, 234, 234);
+    border-radius: 5px;
+
+    padding-left: 1%;
+
+    box-shadow: 5px 5px 10px 5px #858582;
+    overscroll-behavior-y: contain;
+    overflow-y: scroll;
+  }
+}
+
+.in {
+  width: 200px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: rgb(12, 1, 1);
+  font-size: 14px;
+
+  margin-bottom: 4%;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 30%;
+    min-width: 200px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
+input {
+  width: 100px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: whitesmoke;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input:focus {
+  outline: none;
+  color: rgb(15, 14, 14);
+  background-color: rgba(217, 231, 243, 0.35);
+}
+button {
+  position: inherit;
+  border-radius: 4px;
+  color: rgb(248, 243, 243);
+  font-size: 18px;
+  height: 30px;
+  border: none;
+  background-color: rgb(175, 102, 243);
+}
+button:active {
+  background-color: rgb(191, 136, 242);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.image {
+  float: right;
+  overflow: hidden;
+  z-index: 1;
+  position: sticky;
+  bottom: 0%;
+  width: 500px;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+@media only screen and (min-width: 300px) and (max-height: 400px) {
+  .image {
+    float: right;
+    overflow: hidden;
+    z-index: 1;
+    position: sticky;
+
+    bottom: 0%;
+  }
+}
+.under {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 25% 25%;
+  bottom: 7%;
+  left: 50%;
+}
+@media only screen and (min-width: 300px) and (max-height: 400px) {
+  .under {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 25% 25%;
+    bottom: 7%;
+    left: 30%;
+  }
+}
+.under1 {
+  position: absolute;
+  display: grid;
+  bottom: 7%;
+  left: 42%;
+}
+
+.inp input {
+  width: 200px;
+}
